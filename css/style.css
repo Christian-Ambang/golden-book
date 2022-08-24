@@ -1,0 +1,385 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffebdc;
+  background-image: radial-gradient(circle, #ffffff 15%, transparent 10%),
+    radial-gradient(circle, #ffffff 15%, transparent 10%);
+  background-size: 100px 100px;
+  background-position: 0 0, 50px 50px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.globalLivre {
+  width: 100%;
+}
+
+.livre {
+  position: relative;
+  width: 320px;
+  height: 620px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background-image: url("../imgs/bg_main-2.png");
+  background-repeat: no-repeat;
+}
+
+.livre .presentation {
+  font-size: 32px;
+  color: #e2a742;
+  font-family: "Tangerine", cursive;
+  width: 280px;
+  margin: 25px auto 15px auto;
+  text-align: center;
+}
+
+.livre .presentation hr {
+  width: 180px;
+  padding: 0;
+  border: 1px solid #e2a742;
+}
+
+.livre .presentation span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.livre .form {
+  width: 280px;
+  margin: 15px auto;
+  text-align: center;
+}
+
+.livre .form form {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.livre .form input[type="text"],
+.livre .form input[type="file"] {
+  width: 200px;
+  color: #e2a742;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 0;
+  border-radius: 0;
+  -webkit-border: 0;
+  border-bottom: 2px solid #e2a742;
+  -webkit-border-bottom: 2px solid #e2a742;
+  margin-bottom: 8px;
+  font-size: 15px;
+  background-color: #fff8f3;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.livre .form input[type="text"]::placeholder {
+  color: rgba(226, 167, 66, 0.6);
+}
+
+/* file */
+.file {
+  position: relative;
+  margin: 5px 0 10px 0;
+}
+.livre .form input[type="file"] {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  top: 0;
+  opacity: 0.01;
+  cursor: pointer;
+}
+
+.livre .form .file label {
+  width: 196px;
+  background: #fff8f3;
+  border: 2px solid #e2a742;
+  padding: 5px 73px;
+  color: #e2a742;
+  font-weight: bold;
+  font-size: 0.9em;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.fileOk {
+  background: #e2a742 !important;
+  color: #ffffff !important;
+  border: 0 !important;
+  padding: 5px 74.5px !important;
+}
+/* file */
+
+.livre .form textarea {
+  width: 200px;
+  height: 50px;
+  color: #e2a742;
+  border: 2px solid #e2a742;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  margin-bottom: 8px;
+  font-size: 15px;
+  background-color: #fff8f3;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.livre .form textarea::placeholder {
+  color: rgba(226, 167, 66, 0.6);
+}
+
+.livre .form button {
+  width: 90px;
+  color: #e2a742;
+  border: 2px solid #e2a742;
+  padding: 2px;
+  margin-bottom: 8px;
+  font-size: 15px;
+  background-color: #fff8f3;
+  float: right;
+}
+.clear {
+  clear: both;
+}
+
+.livre .retour {
+  border-top: 2px solid #e2a742;
+  border-right: 0;
+  border-bottom: 2px solid #e2a742;
+  border-left: 2px solid #e2a742;
+  display: inline;
+  padding: 2px;
+  width: 200px;
+  font-size: 12px;
+  color: #e2a742;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.livre .retour a {
+  color: #e2a742;
+}
+
+.livre .retourLivreDor {
+  border: 2px solid #e2a742;
+  padding: 2px 7px;
+  width: 200px;
+  font-size: 12px;
+  color: #e2a742;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.livre .retourPlus {
+  border-top: 2px solid #e2a742;
+  border-right: 2px solid #e2a742;
+  border-bottom: 2px solid #e2a742;
+  border-left: 2px solid #e2a742;
+  display: inline;
+
+  width: 20px;
+  padding: 2px;
+  font-size: 12px;
+  color: #ffffff;
+  background-color: #e2a742;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.livre .retourPlus a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.globalRetour {
+  width: 240px;
+  margin: 0 auto;
+}
+
+.globalLivre .livre .cofirmation {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.globalLivre .livre .cofirmation .couple {
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+/* Message Popup */
+.globalMessagePopup {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  z-index: 1;
+  padding-top: 45px;
+  height: 120%;
+}
+
+.messagePopup {
+  width: 280px;
+
+  background: #ffffff;
+  position: relative;
+  border: 2px solid #ffffff;
+
+  margin: 0 auto;
+  padding: 20px;
+  z-index: 10;
+
+  font-size: 14px;
+  color: #e2a742;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.messagePopup:before {
+  background: none;
+  border: 2px solid #e2a740;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  pointer-events: none;
+}
+
+.messagePopup span {
+  color: #e2a740;
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border: 2px solid #e2a740;
+  border-radius: 20px;
+  padding-top: 4px;
+  right: -10px;
+  top: -10px;
+}
+
+.messagePopupEnd {
+  width: 280px;
+
+  background: #ffffff;
+  position: relative;
+  border: 2px solid #ffffff;
+
+  margin: 0 auto;
+  padding: 20px;
+  z-index: 10;
+
+  font-size: 14px;
+  color: #e2a742;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.messagePopupEnd:before {
+  background: none;
+  border: 2px solid #e2a740;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  pointer-events: none;
+}
+
+.globalMessagePopupEnd {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  z-index: 1;
+  padding-top: 200px;
+  height: 120%;
+}
+/* Message Popup */
+
+/* Previsualisation */
+.globalPrevisualisation {
+  width: 100%;
+  padding-top: 35px;
+}
+
+.titre {
+  width: 280px;
+  margin: 0 auto;
+  padding: 20px 0;
+  background-color: #ffffff;
+  color: #e2a740;
+  font-size: 15px;
+  font-family: "Tangerine", cursive;
+  text-align: center;
+
+  background: #ffffff;
+  position: relative;
+  border: 2px solid #ffffff;
+  z-index: 10;
+}
+
+.titre:before {
+  background: none;
+  border: 2px solid #e2a740;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  pointer-events: none;
+}
+
+.titre h1 {
+  margin: 0;
+}
+
+.previsualisation {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.previsualisation .Message {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #ffffff;
+  font-size: 14px;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.previsualisation .Message p {
+  margin: 0;
+  word-break: break-word;
+}
+
+.globalLivre .info {
+  position: absolute;
+  right: 38px;
+  bottom: 80px;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #e2a740;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 0;
+  cursor: pointer;
+  padding-left: 6px;
+  border-radius: 10px;
+  border: 2px solid #e2a740;
+  width: 20px;
+  height: 20px;
+}
+
+.messagePopup a {
+  color: #e2a740;
+}
